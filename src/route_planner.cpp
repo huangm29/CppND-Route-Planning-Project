@@ -112,6 +112,10 @@ RoutePlanner::ConstructFinalPath(RouteModel::Node *current_node) {
 void RoutePlanner::AStarSearch() {
   RouteModel::Node *current_node = nullptr;
   // TODO: Implement your solution here.
+  if (start_node == end_node) {
+    std::cout << "Same coordinates for start and end points!\n";
+    return;
+  }
   AddNeighbors(start_node);
   start_node->visited = true;
   while (open_list.size() > 0) {
