@@ -58,7 +58,7 @@ int main(int argc, const char **argv) {
   std::cout << "Please input your starting coordinate (x1, y1) and  \n"
             << "ending coordinates(x2, y2) in <x1 y1 x2 y2> form \n "
             << "(x and y are from 0 to 100). \n";
-  std::cin >> start_x >> start_y >> end_x >> start_y;
+  std::cin >> start_x >> start_y >> end_x >> end_y;
 
   // Build Model.
   RouteModel model{osm_data};
